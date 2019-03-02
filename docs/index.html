@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="bootstrap_4_0_0_alpha_6.css" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Markdown Textarea Editor</title>
+  </head>
+
+  <body>
+    <div class="MarkdownTextareaEditor">
+      <form class="MarkdownTextareaEditor-section row js-uploadAssetForm">
+        <div class="MarkdownTextareaEditor-sectionHeader col-lg-8 u-noMarPad">
+          <div class="MarkdownTextareaEditor-sectionSubHeader MarkdownTextareaEditor-toolbar">
+            <span>
+              <span class="js-bodyEditButton MarkdownTextareaEditor-sectionSubHeaderToggle is-active">Edit</span>
+              |
+              <span class="js-bodyViewButton MarkdownTextareaEditor-sectionSubHeaderToggle">View</span>
+            </span>
+            <span class="u-floatRightTillSmall js-toolbarActions">
+              <span class="js-addBigHeader MarkdownTextareaEditor-toolbarItem">
+                <span class="u-kujocon u-kujocon--header"></span>
+              </span>
+              <span class="js-addMediumHeader MarkdownTextareaEditor-toolbarItem">
+                <span class="u-kujocon u-kujocon--header u-point8em"></span>
+              </span>
+              <span class="js-addSmallHeader MarkdownTextareaEditor-toolbarItem">
+                <span class="u-kujocon u-kujocon--header u-point6em"></span>
+              </span>
+              |
+              <span class="js-toggleBold MarkdownTextareaEditor-toolbarItem">
+                <span class="u-kujocon u-kujocon--bold"></span>
+              </span>
+              <span class="js-toggleItalics MarkdownTextareaEditor-toolbarItem">
+                <span class="u-kujocon u-kujocon--italic"></span>
+              </span>
+              <span class="js-toggleStrikethrough MarkdownTextareaEditor-toolbarItem">
+                <span class="u-kujocon u-kujocon--strikethrough"></span>
+              </span>
+              |
+              <span class="js-addUnorderedList MarkdownTextareaEditor-toolbarItem">
+                <span class="u-kujocon u-kujocon--list-ul"></span>
+              </span>
+              <span class="js-addOrderedList MarkdownTextareaEditor-toolbarItem">
+                <span class="u-kujocon u-kujocon--list-ol"></span>
+              </span>
+              |
+              <span class="js-addLink MarkdownTextareaEditor-toolbarItem">
+                <span class="u-kujocon u-kujocon--chain"></span>
+              </span>
+              <span class="js-addLink MarkdownTextareaEditor-toolbarItem">
+                <div class="js-bodyUploadButton MarkdownTextareaEditor-uploadWrapper">
+                  <div class="MarkdownTextareaEditor-upload js-uploadAssetText u-kujocon u-kujocon--image"></div>
+                  <input type="file" name="file" class="js-uploadAsset">
+                </div>
+              </span>
+          </div>
+            </span>
+            <div class="js-uploadAssetMessage u-displayNone u-error">
+              There was an unexpected error during upload.
+              Please refresh the page and try again.
+            </div>
+        </div>
+      </form>
+      <form class="js-blogForm">
+        <div class="row">
+          <div class="col-lg-8 MarkdownTextareaEditor-block">
+            <div class="js-bodyEditContainer">
+              <div class="MarkdownTextareaEditor-section">
+                <input name="title" class="MarkdownTextareaEditor-title u-fullWidth js-title" placeholder="Title">
+              </div>
+              <div class="MarkdownTextareaEditor-section">
+                <textarea name="body" class="MarkdownTextareaEditor-body u-fullWidth js-bodyEditMode" placeholder="Tell your story..."></textarea>
+              </div>
+            </div>
+            <div class="Article-body js-bodyViewMode u-displayNone"></div>
+          </div>
+          <div class="col-lg-4 MarkdownTextareaEditor-markdown">
+            <h1 style="text-align:center;">Markdown Formatting</h1>
+            <div>
+              <h2 class="MarkdownTextareaEditor-markdownHeader">Headers</h2>
+              <div class="MarkdownTextareaEditor-markdownExample">
+                ## Large Header
+                <br>
+                ### Medium Header
+                <br>
+                #### Small Header
+              </div>
+            </div>
+            <div>
+              <h2 class="MarkdownTextareaEditor-markdownHeader">Emphasis</h2>
+              <div class="MarkdownTextareaEditor-markdownExample">
+                **<strong>bold</strong>**
+                <br>
+                _<em>italics</em>_
+                <br>
+                ~~<strike>strikethrough</strike>~~
+              </div>
+            </div>
+            <div>
+              <h2 class="MarkdownTextareaEditor-markdownHeader">Lists</h2>
+              <div class="MarkdownTextareaEditor-markdownExample">
+                * Bullet item
+                <br>
+                * Bullet item
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;* Sub item (tab indented)
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;* Sub item (tab indented)
+                <br>
+                * Bullet item
+                <br>
+                <br>
+
+                1. Numbered item
+                <br>
+                2. Numbered item
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;1. Sub item (tab indented)
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;2. Sub item (tab indented)
+                <br>
+                3. Numbered item
+                <br>
+              </div>
+            </div>
+            <div>
+              <h2 class="MarkdownTextareaEditor-markdownHeader">Links</h2>
+              <div class="MarkdownTextareaEditor-markdownExample">
+                [Text](http://www.url.com)
+              </div>
+            </div>
+            <div>
+              <h2 class="MarkdownTextareaEditor-markdownHeader">Images</h2>
+              <div class="MarkdownTextareaEditor-markdownExample">
+                ![Description](http://www.url.com/image.jpg)
+                <br>
+              </div>
+              Need nice, beautiful images? Check out <a href="https://unsplash.com">unsplash.com</a>
+            </div>
+            <div>
+              <h2 class="MarkdownTextareaEditor-markdownHeader">Tables</h2>
+              <div class="MarkdownTextareaEditor-markdownExample">
+                |&nbsp;Column 1&nbsp;|&nbsp;Column 2&nbsp;|&nbsp;Column 3&nbsp;|
+                <br>
+                |&nbsp;--------&nbsp;|&nbsp;--------&nbsp;|&nbsp;--------&nbsp;|
+                <br>
+                |&nbsp;Chardon&nbsp;&nbsp;|&nbsp;OH&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;USA&nbsp;&nbsp;&nbsp;&nbsp;|
+                <br>
+                |&nbsp;Monroe&nbsp;&nbsp;&nbsp;|&nbsp;MI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;USA&nbsp;&nbsp;&nbsp;&nbsp;|
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="index.dist.js"></script>
+</html>

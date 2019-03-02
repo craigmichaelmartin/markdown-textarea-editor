@@ -1,0 +1,255 @@
+html,
+body {
+  min-height:100%;
+  height:100%;
+  margin:0;
+  padding:0;
+  font-size: 14px;
+  color: #111;
+}
+.MarkdownTextareaEditor input,
+.MarkdownTextareaEditor textarea {
+  font-weight: 200;
+  font-size: 1.7em;
+}
+.MarkdownTextareaEditor input.MarkdownTextareaEditor-title {
+  font-size: 2.5em;
+}
+.MarkdownTextareaEditor-block {
+  border: 1px solid #ececec;
+  border-radius: 6px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-top: 0;
+}
+.MarkdownTextareaEditor-section {
+  margin-top: 30px;
+}
+.MarkdownTextareaEditor-sectionHeader {
+  font-size: 1.8em;
+  font-weight: 500;
+  letter-spacing: 2px;
+  line-height: 1.1em;
+  margin-bottom: 5px;
+}
+.MarkdownTextareaEditor-sectionHeaderTooltip {
+  vertical-align: middle;
+  font-size: .8em;
+  color: blue;
+}
+.MarkdownTextareaEditor-sectionHeaderTooltipContent {
+  font-size: .6em;
+}
+.MarkdownTextareaEditor-body {
+  min-height: 900px;
+}
+.MarkdownTextareaEditor-title,
+.MarkdownTextareaEditor-body {
+  font-weight: 300;
+  letter-spacing: 1px;
+  border: 0;
+}
+.MarkdownTextareaEditor-title:focus,
+.MarkdownTextareaEditor-body:focus {
+  outline: 0;
+  border: 0;
+}
+.MarkdownTextareaEditor-slug:disabled {
+  background-color: #efefef;
+  cursor: not-allowed;
+  color: #727272;
+  border: 1px solid #c2c2c2;
+}
+.MarkdownTextareaEditor-slug,
+.MarkdownTextareaEditor-primaryWrapper,
+.MarkdownTextareaEditor-readTimeMinutes,
+.MarkdownTextareaEditor-seoDescription {
+  padding-left: 10px;
+  border-radius: 4px;
+  border: 1px solid #a6a6a6;
+}
+.MarkdownTextareaEditor-sectionSubHeader {
+  font-size: .8em;
+  font-weight: 200;
+  color: grey;
+}
+.MarkdownTextareaEditor-sectionSubHeaderToggle {
+  cursor: pointer;
+  color: #333;
+  opacity: .65;
+  transition: opacity .1s ease-in-out;
+}
+.MarkdownTextareaEditor-sectionSubHeaderToggle:hover {
+  opacity: .95;
+}
+.MarkdownTextareaEditor-sectionSubHeaderToggle.is-active {
+  font-weight: 500;
+  opacity: .8;
+}
+
+
+.MarkdownTextareaEditor-primaryWrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  width: 100%;
+  font-size: 1.7em;
+  font-weight: 100;
+}
+.MarkdownTextareaEditor-uploadWrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  top: 2px;
+}
+.MarkdownTextareaEditor-upload {
+  border: 0;
+  color: grey;
+  background-color: white;
+}
+.MarkdownTextareaEditor-primaryWrapper input[type=file],
+.MarkdownTextareaEditor-uploadWrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.MarkdownTextareaEditor-markdown {
+  margin-top: -50px;
+  opacity: .6;
+  transition: opacity .1s ease-in-out;
+}
+.MarkdownTextareaEditor-markdown:hover {
+  opacity: .95;
+}
+
+.MarkdownTextareaEditor-markdownHeader {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.MarkdownTextareaEditor-markdownExample {
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+  padding: 10px;
+  background: #ececec;
+  border-radius: 4px;
+}
+
+.MarkdownTextareaEditor-toolbar {
+  color: #ececec;
+  border-radius: 6px;
+  border: solid 1px #ececec;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 8px 12px;
+}
+.MarkdownTextareaEditor-toolbarItem {
+  color: #333;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: .8em;
+  cursor: pointer;
+  opacity: .4;
+  transition: opacity .1s ease-in-out;
+}
+.MarkdownTextareaEditor-toolbarItem:hover {
+  opacity: .95;
+}
+
+.MarkdownTextareaEditor-primaryImagePreview {
+  width: 100%;
+  height: 410px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.u-fullWidth {
+  width: 100%;
+}
+.u-error {
+  font-style: italic;
+  padding: 10px;
+  border-radius: 4px;
+  color: white;
+  font-size: .8em;
+  background-color: #be0000;
+}
+.u-point8em {
+  font-size: .8em;
+}
+.u-point6em {
+  font-size: .6em;
+}
+.u-noMarPad {
+  margin: 0;
+  padding: 0;
+}
+.u-displayNone {
+  display: none;
+}
+@media (min-width: 769px) {
+  .u-floatRightTillSmall {
+    float: right;
+  }
+}
+
+@font-face {
+  font-family: 'kujocon';
+  src:
+  url('kujocon.ttf?79zkys') format('truetype'),
+  url('kujocon.woff?79zkys') format('woff'),
+  url('kujocon.svg?79zkys#kujocon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.u-kujocon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'kujocon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.u-kujocon--strikethrough:before {
+  content: "\e918";
+}
+.u-kujocon--picture-o:before,
+.u-kujocon--photo:before,
+.u-kujocon--image:before {
+  content: "\e911";
+}
+.u-kujocon--chain:before,
+.u-kujocon--link:before {
+  content: "\e912";
+}
+.u-kujocon--list-ul:before {
+  content: "\e913";
+}
+.u-kujocon--list-ol:before {
+  content: "\e914";
+}
+.u-kujocon--bold:before {
+  content: "\e915";
+}
+.u-kujocon--italic:before {
+  content: "\e916";
+}
+.u-kujocon--header:before {
+  content: "\e917";
+}
+
+
+
+/* github pages stuff */
+body {
+  margin: 40px;
+}
