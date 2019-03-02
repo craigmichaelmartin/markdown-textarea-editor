@@ -1,5 +1,5 @@
 var markdownFunctions = require('markdown-functions');
-var md = require('../../node_modules/markdown-it/dist/markdown-it.min.js')();
+var md = require('markdown-it')();
 
 var markdownTextareaEditor = function(elements, config) {
   var bodyViewButton = elements.bodyViewButton;
