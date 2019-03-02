@@ -14,6 +14,10 @@ npm install --save markdown-textarea-editor
 
 `markdown-textarea-editor` is a vanilla markdown editor.
 
+## Demo
+
+https://craigmichaelmartin.github.io/markdown-textarea-editor/
+
 ## Usage
 
 #### Javascript
