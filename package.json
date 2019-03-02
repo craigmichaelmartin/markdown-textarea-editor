@@ -17,7 +17,7 @@
     "pub": "npm run test && np"
   },
   "dependencies": {
-    "markdown-functions": "^0.0.4",
+    "markdown-functions": "^1.0.0",
     "markdown-it": "^8.4.0"
   },
   "devDependencies": {
