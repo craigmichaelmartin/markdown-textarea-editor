@@ -48,7 +48,7 @@
     "textarea"
   ],
   "files": [
-    "src/markdown-textarea-editor.js",
+    "src/javascript/markdown-textarea-editor.js",
     "LICENSE"
   ]
 }
