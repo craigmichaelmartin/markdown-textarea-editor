@@ -48,7 +48,9 @@ markdownTextareaEditor(
   },
   {
     postAsset: function(obj) {
-      obj.success({ Location: 'https://images.unsplash.com/photo-1551464885-21348ccc8b67' });
+      obj.success({
+        Location: 'https://images.unsplash.com/photo-1551464885-21348ccc8b67'
+      });
     }
   }
 );

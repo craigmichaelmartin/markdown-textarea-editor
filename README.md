@@ -21,8 +21,9 @@ npm install --save markdown-textarea-editor
 Call `markdownTextareaEditor` with the elements for the editor:
 
 ```javascript
-  const markdownTextareaEditor = require('markdownTextareaEditor');
-  markdownTextareaEditor({
+const markdownTextareaEditor = require('markdownTextareaEditor');
+markdownTextareaEditor(
+  {
     bodyViewButton,
     bodyEditButton,
     bodyViewMode,
@@ -43,11 +44,13 @@ Call `markdownTextareaEditor` with the elements for the editor:
     uploadAssetText,
     uploadAssetForm,
     uploadAssetMessage
-  }, {
-    postAsset: ({data, success, error}) => {
+  },
+  {
+    postAsset: ({ data, success, error }) => {
       // your ajax post code
     }
-  });
+  }
+);
 ```
 
 #### HTML/CSS/Font
