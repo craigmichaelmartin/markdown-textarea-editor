@@ -12,6 +12,28 @@ body {
   font-weight: 200;
   font-size: 1.7em;
 }
+.MarkdownTextareaEditor-view {
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  font-weight: 200;
+  text-align: justify;
+}
+.MarkdownTextareaEditor-view img {
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  border-radius: 3px;
+}
+.MarkdownTextareaEditor-view h1 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.MarkdownTextareaEditor-view p {
+  margin-bottom: 20px;
+}
+.MardownTextareaEditor-view a {
+  color: #a78f0b;
+}
 .MarkdownTextareaEditor input.MarkdownTextareaEditor-title {
   font-size: 2.5em;
 }

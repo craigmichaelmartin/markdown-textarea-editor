@@ -117,7 +117,7 @@ markdownTextareaEditor(
   },
   {
     postAsset: function(obj) {
-      obj.success({ Location: 'https://www.kujo.com/public/images/logo_with_words-6806cf2c04.png' });
+      obj.success({ Location: 'https://images.unsplash.com/photo-1551464885-21348ccc8b67' });
     }
   }
 );
