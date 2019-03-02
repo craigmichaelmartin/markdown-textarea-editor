@@ -1,6 +1,6 @@
 {
   "name": "markdown-textarea-editor",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "browser": "src/javascript/markdown-textarea-editor.js",
   "main": "src/javascript/markdown-textarea-editor.js",
   "engines": {
